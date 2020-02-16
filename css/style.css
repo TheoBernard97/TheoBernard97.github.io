@@ -1,0 +1,204 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+}
+
+/* Sections */
+
+section,
+footer {
+  padding: 5% 20%;
+}
+
+.light-section {
+  background-color: #efefef;
+  color: #343a40;
+}
+
+.dark-section {
+  background-color: #343a40;
+  color: #efefef;
+}
+
+.section-title {
+  padding-bottom: 5%;
+  letter-spacing: 1px;
+}
+
+/* Nav Bar */
+
+#navbar-target {
+  padding: 8px 20%;
+}
+
+.navbar-brand {
+  font-family: "Cookie", cursive;
+  font-size: 1.5rem;
+}
+
+.navbar-brand i {
+  font-size: 1rem;
+}
+
+.nav-pills .nav-link.active {
+  background-color: unset;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Home */
+
+.big-tittle {
+  font-size: 3rem;
+  padding-bottom: 5%;
+}
+
+.picture {
+  width: 350px;
+  border: solid 2px #343a40;
+}
+
+.self-description {
+  text-align: left;
+}
+
+.self-description-tittle {
+  font-size: 2.3rem;
+  padding-bottom: 3%;
+}
+
+.self-description-text {
+  padding-bottom: 3%;
+}
+
+.self-description-button {
+  width: 130px;
+  margin-right: 3%;
+  color: #efefef;
+}
+
+.button-text {
+  display: inline-block !important;
+  margin: 0;
+}
+
+/* Skills */
+
+.skill-title {
+  text-align: left;
+}
+
+.progress {
+  margin-bottom: 3%;
+}
+
+/* Projects */
+
+.project-container {
+  position: relative;
+  min-width: 350px !important;
+  width: 33.33333%;
+  padding: 22.2222% 0 0;
+}
+
+.project-img {
+  background-size: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.project-description {
+  background-color: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+  position: absolute;
+  padding: 10% 3%;
+  z-index: 1;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.project-description:hover {
+  -webkit-animation: 1s fade forwards;
+  animation: 1s fade forwards;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.project-title {
+  font-size: 2rem;
+}
+
+.project-tech-list {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #007bff;
+  padding-bottom: 10%;
+}
+
+.project-button {
+  border: solid 2px #343a40 !important;
+  border-radius: unset !important;
+  font-weight: bold;
+}
+
+.project1 .project-img {
+  background-image: url("../images/zozor-project.jpg");
+  background-color: #fff5d7;
+}
+
+.project2 .project-img {
+  background-image: url("../images/tindog-project.jpg");
+  background-color: #ff4c68;
+}
+
+.project3 .project-img {
+  background-image: url("../images/roll-project.jpg");
+  background-color: #222c37;
+}
+
+/* Footer */
+
+.footer-button {
+  margin: 0 10px 0;
+}
+
+.copyright {
+  margin: 15px 0 0;
+}

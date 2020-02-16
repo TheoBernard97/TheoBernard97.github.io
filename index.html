@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Théo Bernard</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <script src="js/main.js"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/59ccd0d27e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Bootstrap Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body data-spy="scroll" data-target="#navbar-target" data-offset="200">
+    <!-- Nav Bar -->
+    <nav
+      id="navbar-target"
+      class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark"
+    >
+      <a href="#acceuil" class="navbar-brand"
+        ><i class="fas fa-terminal"></i> Théo Bernard</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav nav-pills ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#acceuil">Acceuil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#compétences">Compétences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projets">Projets</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="acceuil" class="light-section">
+      <div class="container-fluid">
+        <h1 class="big-tittle">Développeur Web Front-end</h1>
+        <div class="row">
+          <div class="col-lg-6">
+            <img class="picture" src="images/myPicture.jpg" alt="my picture" />
+          </div>
+          <div class="col-lg-6 self-description">
+            <h3 class="self-description-tittle">Théo Bernard</h3>
+            <p class="self-description-text">
+              Etudiant développeur web situé à Paris. Intéressé par la
+              programmation et la technologie depuis toujours je me spécialise
+              dans le web et particulièrement le front-end. Tout ce que je
+              souhaite c'est découvrir et me challenger pour progresser jour
+              après jour.
+            </p>
+
+            <a
+              href="images/CV_Web_Théo_Bernard.pdf"
+              class="btn btn-lg btn-dark self-description-button"
+              download
+            >
+              <i class="far fa-file-alt "> </i>
+              <p class="button-text">CV</p></a
+            >
+            <a
+              href="https://github.com/TheoBernard97"
+              target="blank"
+              class="btn btn-lg btn-dark self-description-button"
+            >
+              <i class="fab fa-github"> </i>
+              <p class="button-text">Github</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="compétences" class="dark-section">
+      <h2 class="section-title">Compétences</h2>
+      <p class="skill-title"><i class="fab fa-html5"></i> HTML 5</p>
+      <div class="progress">
+        <div
+          class="progress-bar bg-primary"
+          role="progressbar"
+          style="width: 80%"
+          aria-valuenow="25"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div>
+      <p class="skill-title"><i class="fab fa-css3-alt"></i> CSS 3</p>
+      <div class="progress">
+        <div
+          class="progress-bar bg-primary"
+          role="progressbar"
+          style="width: 80%"
+          aria-valuenow="25"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div>
+      <p class="skill-title"><i class="fab fa-js-square"></i> JavaScript ES6</p>
+      <div class="progress">
+        <div
+          class="progress-bar bg-primary"
+          role="progressbar"
+          style="width: 65%"
+          aria-valuenow="25"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div>
+      <p class="skill-title"><i class="fab fa-bootstrap"></i> Bootstrap 4</p>
+      <div class="progress">
+        <div
+          class="progress-bar bg-primary"
+          role="progressbar"
+          style="width: 65%"
+          aria-valuenow="25"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div>
+      <p class="skill-title"><i class="fab fa-wordpress"></i> WordPress</p>
+      <div class="progress">
+        <div
+          class="progress-bar bg-primary"
+          role="progressbar"
+          style="width: 20%"
+          aria-valuenow="25"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div>
+      <p class="skill-title"><i class="fab fa-git-alt"></i> Git</p>
+      <div class="progress">
+        <div
+          class="progress-bar bg-primary"
+          role="progressbar"
+          style="width: 50%"
+          aria-valuenow="25"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projets" class="light-section">
+      <div class="container-fluid">
+        <h2 class="section-title">Projets</h2>
+        <div class="row all-project-container">
+          <div
+            class="project-container project1 shadow border col-xl-4 col-lg-6"
+          >
+            <div class="project-img"></div>
+            <div class="project-description">
+              <h4 class="project-title">Le blog de Zozor</h4>
+              <p class="project-tech-list">HTML - CSS</p>
+              <button class="btn btn-outline-dark project-button">
+                En savoir plus
+              </button>
+            </div>
+          </div>
+          <div
+            class="project-container project2 shadow border col-xl-4 col-lg-6"
+          >
+            <div class="project-img"></div>
+            <div class="project-description">
+              <h4 class="project-title">Tindog</h4>
+              <p class="project-tech-list">HTML - CSS - Bootstrap</p>
+              <button class="btn btn-outline-dark project-button">
+                En savoir plus
+              </button>
+            </div>
+          </div>
+          <div
+            class="project-container project3 shadow border col-xl-4 col-lg-6"
+          >
+            <div class="project-img"></div>
+            <div class="project-description">
+              <h4 class="project-title">Roll a ball 3D</h4>
+              <p class="project-tech-list">C# - Unity</p>
+              <button class="btn btn-outline-dark project-button">
+                En savoir plus
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="dark-section">
+      <a
+        href="https://www.linkedin.com/in/theo-bernard/"
+        target="blank"
+        class="footer-button text-light"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <a
+        href="https://github.com/TheoBernard97"
+        target="blank"
+        class="footer-button text-light"
+        ><i class="fab fa-github"></i
+      ></a>
+      <a
+        href="mailto:theo.bernard.94@gmail.com"
+        class="footer-button text-light"
+        ><i class="fas fa-envelope"></i
+      ></a>
+      <p class="copyright">
+        © <a href="#acceuil" class="text-light">Théo Bernard</a> 2020
+      </p>
+    </footer>
+  </body>
+</html>
