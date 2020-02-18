@@ -53,6 +53,56 @@
     ></script>
   </head>
   <body data-spy="scroll" data-target="#navbar-target" data-offset="200">
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+        role="document"
+      >
+        <div class="modal-content shadow">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalCenterTitle"></h4>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="#"
+              id="modal-image"
+              class="modal-image"
+              alt="modal image"
+            />
+          </div>
+          <div class="modal-footer">
+            <p id="modal-tech-list" class="modal-tech-list mr-auto"></p>
+            <p id="modal-description" class="modal-description mr-auto"></p>
+            <a
+              href="#"
+              target="blank"
+              id="modal-button"
+              class="btn btn-outline-dark modal-button ml-auto"
+            >
+              <i class="fab fa-github"> </i>
+              <p class="button-text">Github</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Nav Bar -->
     <nav
       id="navbar-target"
@@ -199,38 +249,49 @@
       <div class="container-fluid">
         <h2 class="section-title">Projets</h2>
         <div class="row all-project-container">
-          <div
-            class="project-container project1 shadow border col-xl-4 col-lg-6"
-          >
+          <div class="project-container project1 shadow border">
             <div class="project-img"></div>
             <div class="project-description">
               <h4 class="project-title">Le blog de Zozor</h4>
               <p class="project-tech-list">HTML - CSS</p>
-              <button class="btn btn-outline-dark project-button">
+              <button
+                id="tindog-button"
+                class="btn btn-outline-dark project-button"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+                onclick="zozorFunction()"
+              >
                 En savoir plus
               </button>
             </div>
           </div>
-          <div
-            class="project-container project2 shadow border col-xl-4 col-lg-6"
-          >
+          <div class="project-container project2 shadow border">
             <div class="project-img"></div>
             <div class="project-description">
               <h4 class="project-title">Tindog</h4>
               <p class="project-tech-list">HTML - CSS - Bootstrap</p>
-              <button class="btn btn-outline-dark project-button">
+              <button
+                class="btn btn-outline-dark project-button"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+                onclick="tindogFunction()"
+              >
                 En savoir plus
               </button>
             </div>
           </div>
-          <div
-            class="project-container project3 shadow border col-xl-4 col-lg-6"
-          >
+          <div class="project-container project3 shadow border">
             <div class="project-img"></div>
             <div class="project-description">
               <h4 class="project-title">Roll a ball 3D</h4>
               <p class="project-tech-list">C# - Unity</p>
-              <button class="btn btn-outline-dark project-button">
+              <button
+                id="roll-button"
+                class="btn btn-outline-dark project-button"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+                onclick="rollFunction()"
+              >
                 En savoir plus
               </button>
             </div>

@@ -38,10 +38,54 @@ footer {
   letter-spacing: 1px;
 }
 
+/* Modal */
+
+.modal-dialog-centered.modal-dialog-scrollable {
+  height: unset !important;
+}
+
+.modal-content {
+  max-height: 600px !important;
+}
+
+.modal-body {
+  padding: unset;
+  max-height: 35% !important;
+}
+
+.modal-image {
+  max-width: 100%;
+}
+
+.modal-footer {
+  height: 20%;
+  flex-direction: column;
+  text-align: left !important;
+  font-weight: bold;
+}
+
+.modal-tech-list {
+  color: #007bff;
+}
+
+.modal-description {
+  max-width: 80%;
+  color: gray;
+}
+
+.modal-button {
+  border: solid 2px #343a40 !important;
+  font-weight: bold;
+}
+
 /* Nav Bar */
 
 #navbar-target {
   padding: 8px 20%;
+}
+
+.navbar-toggler {
+  border: none;
 }
 
 .navbar-brand {
@@ -62,12 +106,13 @@ footer {
 /* Home */
 
 .big-tittle {
-  font-size: 3rem;
+  font-size: 2.8rem;
   padding-bottom: 5%;
 }
 
 .picture {
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   border: solid 2px #343a40;
 }
 
@@ -106,10 +151,13 @@ footer {
 }
 
 /* Projects */
+.row {
+  justify-content: space-between !important;
+}
 
 .project-container {
   position: relative;
-  min-width: 350px !important;
+  min-width: 325px !important;
   width: 33.33333%;
   padding: 22.2222% 0 0;
 }
@@ -162,7 +210,7 @@ footer {
 }
 
 .project-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .project-tech-list {
@@ -201,4 +249,121 @@ footer {
 
 .copyright {
   margin: 15px 0 0;
+}
+
+/*--------------- Responsive ---------------*/
+
+/* Media query for the project section */
+
+@media (max-width: 1650px) {
+  /* Sections */
+
+  section,
+  footer {
+    padding: 5% 15%;
+  }
+
+  /* Nav */
+
+  #navbar-target {
+    padding: 8px 15%;
+  }
+
+  /* Projects */
+
+  .all-project-container {
+    width: 650px !important;
+    margin: 0 auto;
+  }
+
+  .project-container {
+    width: 50%;
+    padding: 33.33333% 0 0;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  /* Modal */
+
+  .modal-dialog {
+    max-width: none !important;
+    margin: 0 15%;
+  }
+
+  .modal-content {
+    max-height: 600px !important;
+  }
+
+  /* Home */
+
+  .picture {
+    max-width: 325px;
+  }
+
+  .self-description-button {
+    width: auto;
+    max-width: 130px;
+  }
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+  /* Sections */
+
+  section,
+  footer {
+    padding: 5% 10%;
+  }
+
+  /* Modal */
+
+  .modal-dialog {
+    max-width: none !important;
+    margin: 0 10%;
+  }
+
+  .modal-content {
+    max-height: 900px !important;
+  }
+
+  /* Nav */
+
+  #navbar-target {
+    padding: 8px 10%;
+  }
+
+  /* Home */
+
+  .picture {
+    margin-bottom: 5%;
+  }
+
+  .self-description {
+    text-align: center;
+  }
+
+  .self-description-button {
+    width: 130px;
+  }
+
+  /* Skills */
+
+  .skill-title {
+    text-align: center;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  /* Projects */
+
+  .all-project-container {
+    width: 350px !important;
+  }
+
+  .project-container {
+    padding: 66.6666% 0 0 !important;
+    margin: 0 auto;
+  }
 }
