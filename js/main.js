@@ -18,7 +18,7 @@ function tindogFunction() {
   document.getElementById("modal-tech-list").innerHTML =
     "HTML - CSS - Bootstrap";
   document.getElementById("modal-description").innerHTML =
-    "Page de présentation fictive de l'application Tindog, ce projet est mon plus récent. C'est le premier réalisé avec Bootstrap et completement responsive.";
+    "Page de présentation fictive de l'application Tindog, ce projet est mon plus récent. C'est également le premier réalisé avec Bootstrap.";
   document.getElementById("modal-button").href =
     "https://github.com/TheoBernard97/Tindog";
 }

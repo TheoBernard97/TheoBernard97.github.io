@@ -1,3 +1,3 @@
-# Portfolio2
+# Portfolio
 
-The 2nd version of my online portfolio.
+My personnal website/portfolio, you can download my resume, check my projects or contact me.

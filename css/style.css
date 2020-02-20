@@ -20,7 +20,7 @@ h2 {
 
 section,
 footer {
-  padding: 5% 20%;
+  padding: 5% 15%;
 }
 
 .light-section {
@@ -81,7 +81,7 @@ footer {
 /* Nav Bar */
 
 #navbar-target {
-  padding: 8px 20%;
+  padding: 8px 15%;
 }
 
 .navbar-toggler {
@@ -151,13 +151,16 @@ footer {
 }
 
 /* Projects */
-.row {
-  justify-content: space-between !important;
+
+.all-project-container {
+  max-width: 1125px !important;
+  margin: 0 auto; /* Need min-margin 0*/
 }
 
 .project-container {
   position: relative;
   min-width: 325px !important;
+  max-width: 375px !important;
   width: 33.33333%;
   padding: 22.2222% 0 0;
 }
@@ -251,29 +254,15 @@ footer {
   margin: 15px 0 0;
 }
 
-/*--------------- Responsive ---------------*/
+/*--------------------------------------------- Responsive ---------------------------------------------*/
 
-/* Media query for the project section */
+/* First breaking point for the project section (less than 1650px) */
 
-@media (max-width: 1650px) {
-  /* Sections */
-
-  section,
-  footer {
-    padding: 5% 15%;
-  }
-
-  /* Nav */
-
-  #navbar-target {
-    padding: 8px 15%;
-  }
-
+@media (max-width: 1649.98px) {
   /* Projects */
 
   .all-project-container {
     width: 650px !important;
-    margin: 0 auto;
   }
 
   .project-container {
@@ -354,16 +343,63 @@ footer {
   }
 }
 
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
+/* Second breaking point for the project section (less than 850px) */
+@media (max-width: 849.98px) {
   /* Projects */
 
+  .cf-project {
+    padding: 0 !important;
+  }
+
   .all-project-container {
-    width: 350px !important;
+    max-width: 325px !important;
   }
 
   .project-container {
     padding: 66.6666% 0 0 !important;
     margin: 0 auto;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  /* Nav Bar */
+
+  .navbar-toggler {
+    padding: 0;
+  }
+
+  #navbar-target {
+    padding: 8px 5%;
+  }
+
+  /* Sections */
+
+  section,
+  footer {
+    padding: 5% 5%;
+  }
+
+  /* Modal */
+
+  .modal-dialog {
+    max-width: none !important;
+    margin: 0 5%;
+  }
+
+  /* Home */
+
+  .big-tittle {
+    font-size: 2.3rem;
+  }
+
+  .self-description {
+    padding: unset;
+  }
+
+  /* Skills */
+
+  .skill-title {
+    margin: 5% 0 2%;
   }
 }
