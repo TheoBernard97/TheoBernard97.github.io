@@ -50,7 +50,6 @@ footer {
 
 .modal-body {
   padding: unset;
-  max-height: 35% !important;
 }
 
 .modal-image {
@@ -154,7 +153,7 @@ footer {
 
 .all-project-container {
   max-width: 1125px !important;
-  margin: 0 auto; /* Need min-margin 0*/
+  margin: 0 auto;
 }
 
 .project-container {
@@ -390,7 +389,7 @@ footer {
   /* Home */
 
   .big-tittle {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
 
   .self-description {
