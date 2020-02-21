@@ -1,6 +1,3 @@
-let modalImage = document.getElementById("modal-image");
-let modalButton = document.getElementById("modal-button");
-
 function zozorFunction() {
   document.getElementById("exampleModalCenterTitle").innerHTML =
     "Le Blog de Zozor";
