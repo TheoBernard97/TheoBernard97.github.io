@@ -1,3 +1,11 @@
+function preload(url) {
+  new Image().src = url;
+}
+
+preload("images/zozor-modal.png");
+preload("images/tindog-modal.png");
+preload("images/roll-modal.png");
+
 function zozorFunction() {
   document.getElementById("exampleModalCenterTitle").innerHTML =
     "Le Blog de Zozor";
