@@ -1,3 +1,5 @@
+// Images preload
+
 function preload(url) {
   new Image().src = url;
 }
@@ -5,6 +7,8 @@ function preload(url) {
 preload("images/zozor-modal.png");
 preload("images/tindog-modal.png");
 preload("images/roll-modal.png");
+
+// Change the content of the modal when the user click on "Learn more"
 
 function zozorFunction() {
   document.getElementById("exampleModalCenterTitle").innerHTML =

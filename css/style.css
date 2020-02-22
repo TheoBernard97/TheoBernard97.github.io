@@ -339,6 +339,7 @@ footer {
 
   .skill-title {
     text-align: center;
+    margin: 5% 0 2%;
   }
 }
 
@@ -376,7 +377,11 @@ footer {
 
   section,
   footer {
-    padding: 5% 5%;
+    padding: 10% 5%;
+  }
+
+  .section-title {
+    letter-spacing: unset;
   }
 
   /* Modal */
@@ -399,6 +404,10 @@ footer {
   /* Skills */
 
   .skill-title {
-    margin: 5% 0 2%;
+    margin: 8% 0 2%;
+  }
+
+  .progress {
+    height: 10px;
   }
 }
