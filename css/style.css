@@ -345,13 +345,6 @@ footer {
   .progress {
     height: 12px;
   }
-
-  /* Projects */
-
-  .project-description:active {
-    -webkit-animation: 1s fade forwards;
-    animation: 1s fade forwards;
-  }
 }
 
 /* Second breaking point for the project section (less than 850px) */
@@ -400,6 +393,10 @@ footer {
   .modal-dialog {
     max-width: none !important;
     margin: 0 5%;
+  }
+
+  .modal-description {
+    max-width: unset;
   }
 
   /* Home */

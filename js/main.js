@@ -38,14 +38,14 @@ function changeModalContent(x) {
   document.querySelector("#modal-button").href = modalButtonList[x];
 }
 
-function zozorFunction() {
+document.querySelector("#zozor-button").addEventListener("click", function() {
   changeModalContent(0);
-}
+});
 
-function tindogFunction() {
+document.querySelector("#tindog-button").addEventListener("click", function() {
   changeModalContent(1);
-}
+});
 
-function rollFunction() {
+document.querySelector("#roll-button").addEventListener("click", function() {
   changeModalContent(2);
-}
+});
