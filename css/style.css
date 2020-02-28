@@ -345,6 +345,13 @@ footer {
   .progress {
     height: 12px;
   }
+
+  /* Projects */
+
+  .project-description:active {
+    -webkit-animation: 1s fade forwards;
+    animation: 1s fade forwards;
+  }
 }
 
 /* Second breaking point for the project section (less than 850px) */
