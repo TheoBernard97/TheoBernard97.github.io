@@ -18,13 +18,15 @@ let modalButtonList = [
 
 // Image preloader
 
-function preload(url) {
-  new Image().src = url;
-}
+window.addEventListener("onload", function() {
+  function preload(url) {
+    new Image().src = url;
+  }
 
-for (let i = 0; i < modalImageList.length; i++) {
-  preload(modalImageList[i]);
-}
+  for (let i = 0; i < modalImageList.length; i++) {
+    preload(modalImageList[i]);
+  }
+});
 
 // Change the content of the modal when the user click on "Learn more"
 
@@ -38,6 +40,8 @@ function changeModalContent(x) {
   document.querySelector("#modal-button").href = modalButtonList[x];
 }
 
+// For desktop
+
 document.querySelector("#zozor-button").addEventListener("click", function() {
   changeModalContent(0);
 });
@@ -48,4 +52,15 @@ document.querySelector("#tindog-button").addEventListener("click", function() {
 
 document.querySelector("#roll-button").addEventListener("click", function() {
   changeModalContent(2);
+});
+
+// For mobile
+
+document.querySelector(".project").addEventListener("focus", function() {
+  let op = 0;
+
+  for (let i = 0; i < 100; i++) {
+    op++;
+    document.querySelector("project-description").style.opacity = op;
+  }
 });
