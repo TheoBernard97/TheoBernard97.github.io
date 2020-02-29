@@ -18,15 +18,13 @@ let modalButtonList = [
 
 // Image preloader
 
-window.addEventListener("onload", function() {
-  function preload(url) {
-    new Image().src = url;
-  }
+function preload(url) {
+  new Image().src = url;
+}
 
-  for (let i = 0; i < modalImageList.length; i++) {
-    preload(modalImageList[i]);
-  }
-});
+for (let i = 0; i < modalImageList.length; i++) {
+  preload(modalImageList[i]);
+}
 
 // Change the content of the modal when the user click on "Learn more"
 
