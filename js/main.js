@@ -6,9 +6,14 @@ let modalImageList = [
 ];
 let modalTechList = ["HTML - CSS", "HTML - CSS - Bootstrap", "C# - Unity"];
 let modalDescriptionList = [
-  "Page d'un blog fictif, ce projet est aussi mon premier projet front-end.",
-  "Page de présentation fictive de l'application Tindog, ce projet est mon plus récent. C'est également le premier réalisé avec Bootstrap.",
+  "Page d'un blog fictif, ce projet est aussi mon premier projet web.",
+  "Page de présentation fictive de l'application Tindog, ce projet est mon premier réalisé avec Bootstrap.",
   "Jeu de plateforme 3D, ce projet de 2015 est mon tout premier. C'est à cette occasion que j'ai découvert les bases de la programmation."
+];
+let modalButtonLiveList = [
+  "https://theobernard97.github.io/Zozor",
+  "https://theobernard97.github.io/Tindog",
+  "https://theobernard97.itch.io/roll-our-earth"
 ];
 let modalButtonList = [
   "https://github.com/TheoBernard97/Zozor",
@@ -35,6 +40,7 @@ function changeModalContent(x) {
   document.querySelector("#modal-tech-list").innerHTML = modalTechList[x];
   document.querySelector("#modal-description").innerHTML =
     modalDescriptionList[x];
+  document.querySelector("#modal-live-button").href = modalButtonLiveList[x];
   document.querySelector("#modal-button").href = modalButtonList[x];
 }
 
@@ -49,3 +55,35 @@ document.querySelector("#tindog-button").addEventListener("click", function() {
 document.querySelector("#roll-button").addEventListener("click", function() {
   changeModalContent(2);
 });
+
+// Skill animation
+
+const progressBarEnds = [80, 80, 65, 20, 65, 10, 50];
+const progressBars = document.querySelectorAll(".progress-bar");
+const skillSection = document.querySelector("#compétences");
+let checkOnce = false;
+
+window.onscroll = function() {
+  if (skillSection.getBoundingClientRect().top <= 300 && checkOnce === false) {
+    waitLoop(0);
+    checkOnce = true;
+  }
+};
+
+function waitLoop(i) {
+  animateLoop(i, 0);
+  setTimeout(function() {
+    if (i < progressBars.length) {
+      waitLoop(i + 1);
+    }
+  }, 300);
+}
+
+function animateLoop(i, j) {
+  setTimeout(function() {
+    if (j < progressBarEnds[i]) {
+      progressBars[i].style.width = j + "%";
+      animateLoop(i, j + 1);
+    }
+  }, 0);
+}

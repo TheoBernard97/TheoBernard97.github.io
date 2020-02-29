@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   position: relative;
@@ -68,7 +72,7 @@ footer {
 }
 
 .modal-description {
-  max-width: 80%;
+  max-width: 85%;
   color: gray;
 }
 
@@ -147,6 +151,11 @@ footer {
 
 .progress {
   margin-bottom: 3%;
+}
+
+.progress-bar {
+  width: 5%;
+  background-color: #007bff;
 }
 
 /* Projects */
