@@ -154,8 +154,9 @@ footer {
 }
 
 .progress-bar {
-  width: 5%;
+  width: 0%;
   background-color: #007bff;
+  transition: width 800ms;
 }
 
 /* Projects */

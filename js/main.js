@@ -64,26 +64,17 @@ const skillSection = document.querySelector("#compétences");
 let checkOnce = false;
 
 window.onscroll = function() {
-  if (skillSection.getBoundingClientRect().top <= 300 && checkOnce === false) {
+  if (skillSection.getBoundingClientRect().top <= 500 && checkOnce === false) {
     waitLoop(0);
     checkOnce = true;
   }
 };
 
 function waitLoop(i) {
-  animateLoop(i, 0);
   setTimeout(function() {
     if (i < progressBars.length) {
+      progressBars[i].style.width = progressBarEnds[i] + "%";
       waitLoop(i + 1);
     }
-  }, 300);
-}
-
-function animateLoop(i, j) {
-  setTimeout(function() {
-    if (j < progressBarEnds[i]) {
-      progressBars[i].style.width = j + "%";
-      animateLoop(i, j + 1);
-    }
-  }, 0);
+  }, 200);
 }
