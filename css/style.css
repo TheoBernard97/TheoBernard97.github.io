@@ -147,15 +147,17 @@ footer {
 
 .skill-title {
   text-align: left;
+  margin-bottom: 7px;
 }
 
 .progress {
   margin-bottom: 3%;
+  height: 15px;
 }
 
 .progress-bar {
   width: 0%;
-  background-color: #007bff;
+  background: linear-gradient(to right, #17a2b8, #007bff);
   transition: width 800ms;
 }
 

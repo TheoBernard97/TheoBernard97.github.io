@@ -58,7 +58,7 @@ document.querySelector("#roll-button").addEventListener("click", function() {
 
 // Skill animation
 
-const progressBarEnds = [80, 80, 65, 20, 65, 10, 50];
+const progressBarEnds = [80, 80, 65, 20, 10, 65, 10, 50];
 const progressBars = document.querySelectorAll(".progress-bar");
 const skillSection = document.querySelector("#compétences");
 let checkOnce = false;
@@ -74,6 +74,7 @@ function waitLoop(i) {
   setTimeout(function() {
     if (i < progressBars.length) {
       progressBars[i].style.width = progressBarEnds[i] + "%";
+      progressBars[i].setAttribute("aria-valuenow", progressBarEnds[i]);
       waitLoop(i + 1);
     }
   }, 200);
