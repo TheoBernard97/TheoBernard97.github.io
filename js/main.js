@@ -58,7 +58,7 @@ document.querySelector("#roll-button").addEventListener("click", function() {
 
 // Skill animation
 
-const progressBarEnds = [80, 80, 65, 20, 10, 65, 10, 50];
+const progressBarEnds = [85, 80, 65, 35, 30, 65, 10, 50];
 const progressBars = document.querySelectorAll(".progress-bar");
 const skillSection = document.querySelector("#compétences");
 let checkOnce = false;
