@@ -35,7 +35,6 @@ const modal = [
 
 modal.map(function(modal) {
   new Image().src = modal.img;
-  console.log(modal.img);
 });
 
 // Change the content of the modal when the user click on "Learn more"
