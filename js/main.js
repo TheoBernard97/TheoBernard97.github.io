@@ -33,9 +33,7 @@ const modal = [
 
 // Image preloader
 
-modal.map(function(modal) {
-  new Image().src = modal.img;
-});
+modal.map(modal => (new Image().src = modal.img));
 
 // Change the content of the modal when the user click on "Learn more"
 
