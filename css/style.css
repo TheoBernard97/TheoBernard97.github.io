@@ -256,6 +256,10 @@ footer {
   font-weight: bold;
 }
 
+.project-button:hover {
+  cursor: pointer;
+}
+
 .project1 .project-img {
   background-image: url("../images/zozor-project.jpg");
   background-color: #fff5d7;
