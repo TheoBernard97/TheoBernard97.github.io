@@ -61,23 +61,39 @@ footer {
 }
 
 .modal-footer {
-  height: 20%;
+  height: 17%;
   flex-direction: column;
-  text-align: left !important;
   font-weight: bold;
+  display: grid;
+  grid-template-columns: 73% 27%;
+  grid-template-rows: 25px 55px;
+  grid-template-areas:
+    "tech tech"
+    "description btn";
 }
 
 .modal-tech-list {
+  text-align: left;
   color: #007bff;
+  font-size: 1.2rem;
+  grid-area: tech;
 }
 
 .modal-description {
-  max-width: 85%;
+  text-align: left;
+  align-self: start;
   color: gray;
+  grid-area: description;
+}
+
+.modal-div-button {
+  align-self: end;
+  text-align: right;
+  grid-area: btn;
 }
 
 .modal-button {
-  border: solid 2px #343a40 !important;
+  border: solid 2px #343a40;
   font-weight: bold;
 }
 
