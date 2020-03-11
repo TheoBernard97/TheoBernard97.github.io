@@ -61,12 +61,12 @@ footer {
 }
 
 .modal-footer {
-  height: 17%;
+  height: 21.5%;
   flex-direction: column;
   font-weight: bold;
   display: grid;
-  grid-template-columns: 73% 27%;
-  grid-template-rows: 25px 55px;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 30px auto;
   grid-template-areas:
     "tech tech"
     "description btn";
@@ -81,7 +81,6 @@ footer {
 
 .modal-description {
   text-align: left;
-  align-self: start;
   color: gray;
   grid-area: description;
 }
@@ -345,6 +344,22 @@ footer {
 
   .modal-content {
     max-height: 900px !important;
+  }
+
+  .modal-footer {
+    display: unset;
+    grid-template-columns: unset;
+    grid-template-rows: unset;
+    grid-template-areas: unset;
+    text-align: center;
+  }
+
+  .modal-description {
+    padding-bottom: 10px;
+  }
+
+  .modal-div-button {
+    text-align: left;
   }
 
   /* Nav */
