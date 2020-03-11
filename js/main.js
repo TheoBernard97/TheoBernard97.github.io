@@ -3,7 +3,7 @@ const modal = [
     id: 1,
     title: "Fylo",
     img: "images/fylo-modal.png",
-    tech: "HTML - SASS",
+    tech: "HTML - CSS - Sass",
     description:
       "Page de présentation fictive du service Fylo, ce projet était pour moi un moyen de pratiquer Sass et CSS grid.",
     live: "https://theobernard97.github.io/Fylo",

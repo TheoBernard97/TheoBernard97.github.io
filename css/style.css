@@ -60,7 +60,7 @@ footer {
   max-width: 100%;
 }
 
-@supports (display: grid) {
+@supports (grid-template-columns: 70% 30%) {
   .modal-footer {
     display: grid;
     grid-template-columns: 70% 30%;
@@ -68,6 +68,15 @@ footer {
     grid-template-areas:
       "tech tech"
       "description btn";
+  }
+}
+
+@supports not (grid-template-columns: 70% 30%) {
+  .modal-description {
+    width: 80%;
+  }
+  .modal-div-button {
+    margin-left: auto;
   }
 }
 
