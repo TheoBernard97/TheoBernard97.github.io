@@ -1,13 +1,13 @@
 const modal = [
   {
     id: 1,
-    title: "Le Blog de Zozor",
-    img: "images/zozor-modal.png",
-    tech: "HTML - CSS",
+    title: "Fylo",
+    img: "images/fylo-modal.png",
+    tech: "HTML - SASS",
     description:
-      "Page d'un blog fictif, ce projet est aussi mon premier projet web.",
-    live: "https://theobernard97.github.io/Zozor",
-    github: "https://github.com/TheoBernard97/Zozor"
+      "Page de présentation fictive du service Fylo, ce projet était pour moi un moyen de pratiquer Sass et CSS grid.",
+    live: "https://theobernard97.github.io/Fylo",
+    github: "https://github.com/TheoBernard97/Fylo"
   },
   {
     id: 2,
@@ -46,7 +46,7 @@ function changeModalContent(x) {
   document.querySelector("#modal-button").href = modal[x].github;
 }
 
-document.querySelector("#zozor-button").addEventListener("click", function() {
+document.querySelector("#fylo-button").addEventListener("click", function() {
   changeModalContent(0);
 });
 
