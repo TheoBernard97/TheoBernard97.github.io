@@ -60,16 +60,21 @@ footer {
   max-width: 100%;
 }
 
+@supports (display: grid) {
+  .modal-footer {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 30px auto;
+    grid-template-areas:
+      "tech tech"
+      "description btn";
+  }
+}
+
 .modal-footer {
   height: 21.5%;
   flex-direction: column;
   font-weight: bold;
-  display: grid;
-  grid-template-columns: 70% 30%;
-  grid-template-rows: 30px auto;
-  grid-template-areas:
-    "tech tech"
-    "description btn";
 }
 
 .modal-tech-list {
@@ -459,7 +464,7 @@ footer {
   /* Skills */
 
   .skill-title {
-    margin: 8% 0 2%;
+    margin: 6% 0 2%;
   }
 
   .progress {
