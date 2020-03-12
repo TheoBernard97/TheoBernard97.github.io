@@ -60,33 +60,18 @@ footer {
   max-width: 100%;
 }
 
-@supports (grid-template-columns: 70% 30%) {
-  .modal-footer {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 30px auto;
-    grid-template-areas:
-      "tech tech"
-      "description btn";
-  }
-}
-
-@supports not (grid-template-columns: 70% 30%) {
-  .modal-description {
-    width: 80%;
-  }
-  .modal-div-button {
-    margin-left: auto;
-  }
-}
-
 .modal-footer {
-  height: 21.5%;
+  height: auto;
   flex-direction: column;
   font-weight: bold;
+  display: grid;
+  grid-template-areas:
+    "tech tech"
+    "description btn";
 }
 
 .modal-tech-list {
+  height: 30px;
   text-align: left;
   color: #007bff;
   font-size: 1.2rem;
@@ -94,9 +79,11 @@ footer {
 }
 
 .modal-description {
+  height: auto;
   text-align: left;
   color: gray;
   grid-area: description;
+  padding-right: 3%;
 }
 
 .modal-div-button {
