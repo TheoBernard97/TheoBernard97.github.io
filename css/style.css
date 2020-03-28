@@ -271,6 +271,11 @@ footer {
 }
 
 .project3 .project-img {
+  background-image: url("../images/keeper-project.jpg");
+  background-color: #eee;
+}
+
+.project4 .project-img {
   background-image: url("../images/roll-project.jpg");
   background-color: #222c37;
 }

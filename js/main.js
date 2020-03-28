@@ -21,6 +21,16 @@ const modal = [
   },
   {
     id: 3,
+    title: "KeeperApp",
+    img: "images/keeper-modal.png",
+    tech: "React.js - CSS",
+    description:
+      "Application web de prise de notes, KeeperApp est mon 1er projet développé avec React.",
+    live: "https://theobernard97.github.io/KeeperApp",
+    github: "https://github.com/TheoBernard97/KeeperApp"
+  },
+  {
+    id: 4,
     title: "Roll a ball 3D",
     img: "images/roll-modal.png",
     tech: "C# - Unity",
@@ -54,13 +64,17 @@ document.querySelector("#tindog-button").addEventListener("click", function() {
   changeModalContent(1);
 });
 
-document.querySelector("#roll-button").addEventListener("click", function() {
+document.querySelector("#keeper-button").addEventListener("click", function() {
   changeModalContent(2);
+});
+
+document.querySelector("#roll-button").addEventListener("click", function() {
+  changeModalContent(3);
 });
 
 // Skill animation
 
-const progressBarEnds = [85, 80, 65, 35, 30, 65, 10, 50];
+const progressBarEnds = [85, 80, 65, 50, 45, 65, 10, 50];
 const progressBars = document.querySelectorAll(".progress-bar");
 const skillSection = document.querySelector("#compétences");
 let checkOnce = false;
