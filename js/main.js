@@ -25,7 +25,7 @@ const modal = [
     img: "images/keeper-modal.png",
     tech: "React.js - CSS",
     description:
-      "Application web de prise de notes, KeeperApp est mon 1er projet développé avec React.",
+      "Application web de prise de notes, KeeperApp est mon premier projet développé avec React.",
     live: "https://theobernard97.github.io/KeeperApp",
     github: "https://github.com/TheoBernard97/KeeperApp"
   },
