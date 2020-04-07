@@ -7,7 +7,7 @@ const modal = [
     description:
       "Page de présentation fictive du service Fylo, ce projet était pour moi un moyen de pratiquer Sass et CSS grid.",
     live: "https://theobernard97.github.io/Fylo",
-    github: "https://github.com/TheoBernard97/Fylo"
+    github: "https://github.com/TheoBernard97/Fylo",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const modal = [
     description:
       "Page de présentation fictive de l'application Tindog, ce projet est mon premier réalisé avec Bootstrap.",
     live: "https://theobernard97.github.io/Tindog",
-    github: "https://github.com/TheoBernard97/Tindog"
+    github: "https://github.com/TheoBernard97/Tindog",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const modal = [
     description:
       "Application web de prise de notes, KeeperApp est mon premier projet développé avec React.",
     live: "https://theobernard97.github.io/KeeperApp",
-    github: "https://github.com/TheoBernard97/KeeperApp"
+    github: "https://github.com/TheoBernard97/KeeperApp",
   },
   {
     id: 4,
@@ -37,13 +37,13 @@ const modal = [
     description:
       "Jeu de plateforme 3D, ce projet de 2015 est mon tout premier. C'est à cette occasion que j'ai découvert les bases de la programmation.",
     live: "https://theobernard97.itch.io/roll-our-earth",
-    github: "https://github.com/TheoBernard97/Roll-a-ball"
-  }
+    github: "https://github.com/TheoBernard97/Roll-a-ball",
+  },
 ];
 
 // Image preloader
 
-modal.map(modal => (new Image().src = modal.img));
+modal.map((modal) => (new Image().src = modal.img));
 
 // Change the content of the modal when the user click on "Learn more"
 
@@ -56,30 +56,30 @@ function changeModalContent(x) {
   document.querySelector("#modal-button").href = modal[x].github;
 }
 
-document.querySelector("#fylo-button").addEventListener("click", function() {
+document.querySelector("#fylo-button").addEventListener("click", function () {
   changeModalContent(0);
 });
 
-document.querySelector("#tindog-button").addEventListener("click", function() {
+document.querySelector("#tindog-button").addEventListener("click", function () {
   changeModalContent(1);
 });
 
-document.querySelector("#keeper-button").addEventListener("click", function() {
+document.querySelector("#keeper-button").addEventListener("click", function () {
   changeModalContent(2);
 });
 
-document.querySelector("#roll-button").addEventListener("click", function() {
+document.querySelector("#roll-button").addEventListener("click", function () {
   changeModalContent(3);
 });
 
 // Skill animation
 
-const progressBarEnds = [85, 80, 65, 50, 45, 65, 10, 50];
+const progressBarEnds = [85, 80, 70, 50, 30, 45, 65, 50];
 const progressBars = document.querySelectorAll(".progress-bar");
 const skillSection = document.querySelector("#compétences");
 let checkOnce = false;
 
-window.onscroll = function() {
+window.onscroll = function () {
   if (skillSection.getBoundingClientRect().top <= 500 && checkOnce === false) {
     waitLoop(0);
     checkOnce = true;
@@ -87,7 +87,7 @@ window.onscroll = function() {
 };
 
 function waitLoop(i) {
-  setTimeout(function() {
+  setTimeout(function () {
     if (i < progressBars.length) {
       progressBars[i].style.width = progressBarEnds[i] + "%";
       progressBars[i].setAttribute("aria-valuenow", progressBarEnds[i]);
