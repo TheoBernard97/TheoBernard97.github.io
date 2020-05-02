@@ -56,30 +56,30 @@ function changeModalContent(x) {
   document.querySelector("#modal-button").href = modal[x].github;
 }
 
-document.querySelector("#fylo-button").addEventListener("click", function () {
+document.querySelector("#fylo-button").addEventListener("click", () => {
   changeModalContent(0);
 });
 
-document.querySelector("#tindog-button").addEventListener("click", function () {
+document.querySelector("#tindog-button").addEventListener("click", () => {
   changeModalContent(1);
 });
 
-document.querySelector("#keeper-button").addEventListener("click", function () {
+document.querySelector("#keeper-button").addEventListener("click", () => {
   changeModalContent(2);
 });
 
-document.querySelector("#roll-button").addEventListener("click", function () {
+document.querySelector("#roll-button").addEventListener("click", () => {
   changeModalContent(3);
 });
 
 // Skill animation
 
-const progressBarEnds = [85, 80, 70, 50, 30, 45, 65, 50];
+const progressBarEnds = [85, 80, 70, 70, 30, 45, 65, 50];
 const progressBars = document.querySelectorAll(".progress-bar");
 const skillSection = document.querySelector("#compétences");
 let checkOnce = false;
 
-window.onscroll = function () {
+window.onscroll = () => {
   if (skillSection.getBoundingClientRect().top <= 500 && checkOnce === false) {
     waitLoop(0);
     checkOnce = true;
@@ -87,7 +87,7 @@ window.onscroll = function () {
 };
 
 function waitLoop(i) {
-  setTimeout(function () {
+  setTimeout(() => {
     if (i < progressBars.length) {
       progressBars[i].style.width = progressBarEnds[i] + "%";
       progressBars[i].setAttribute("aria-valuenow", progressBarEnds[i]);
