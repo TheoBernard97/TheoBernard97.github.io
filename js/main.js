@@ -73,13 +73,13 @@ function waitLoop(i) {
   }, 200);
 }
 
-// Add an event listener on the "Learn more" button
+// Add an event listener on each "Learn more" button
 
-for (let i = 0; i < modal.length; i++) {
-  document.querySelector(modal[i].button).addEventListener("click", () => {
-    changeModalContent(i);
+modal.forEach((element) => {
+  document.querySelector(element.button).addEventListener("click", () => {
+    changeModalContent(element.id - 1);
   });
-}
+});
 
 // Change the content of the modal when the user click on "Learn more"
 
