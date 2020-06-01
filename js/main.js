@@ -34,6 +34,17 @@ const modal = [
   },
   {
     id: 4,
+    title: "Ghiblib",
+    img: "images/ghiblib-modal.png",
+    tech: "React.js - Redux",
+    button: "#ghiblib-button",
+    description:
+      "Site de présentation du Studio Ghibli, ce projet est réalisé avec React, Redux et récupere les données liées aux films via une API publique.",
+    live: "https://theobernard97.github.io/Ghiblib",
+    github: "https://github.com/TheoBernard97/Ghiblib",
+  },
+  {
+    id: 5,
     title: "Roll a ball 3D",
     img: "images/roll-modal.png",
     tech: "C# - Unity",

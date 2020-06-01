@@ -276,6 +276,11 @@ footer {
 }
 
 .project4 .project-img {
+  background-image: url("../images/ghiblib-project.jpg");
+  background-color: #eee;
+}
+
+.project5 .project-img {
   background-image: url("../images/roll-project.jpg");
   background-color: #222c37;
 }
