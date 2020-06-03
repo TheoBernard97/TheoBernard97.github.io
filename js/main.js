@@ -62,7 +62,7 @@ modal.map((modal) => (new Image().src = modal.img));
 
 // Skill animation
 
-const progressBarEnds = [85, 80, 70, 70, 30, 45, 65, 50];
+const progressBarEnds = [80, 75, 70, 75, 30, 50, 65, 60];
 const progressBars = document.querySelectorAll(".progress-bar");
 const skillSection = document.querySelector("#compétences");
 let checkOnce = false;
