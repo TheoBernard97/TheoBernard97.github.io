@@ -1,3 +1,5 @@
+/** @format */
+
 html {
   scroll-behavior: smooth;
 }
@@ -81,7 +83,7 @@ footer {
 .modal-description {
   height: auto;
   text-align: left;
-  color: gray;
+  color: #343a40;
   grid-area: description;
   padding-right: 3%;
 }
@@ -95,6 +97,8 @@ footer {
 .modal-button {
   border: solid 2px #343a40;
   font-weight: bold;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 /* Nav Bar */
@@ -149,9 +153,22 @@ footer {
 }
 
 .self-description-button {
-  width: 130px;
   margin-right: 3%;
+  padding: 0.6rem 0.8rem;
+  color: #343a40;
+  border: solid 2px #343a40;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.self-description-button:hover {
+  background-color: #343a40;
   color: #efefef;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .button-text {
@@ -204,7 +221,7 @@ footer {
 }
 
 .project-description {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.95);
   overflow: hidden;
   position: absolute;
   padding: 10% 3%;
@@ -258,29 +275,36 @@ footer {
 
 .project-button:hover {
   cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .project1 .project-img {
+  background-image: url("../images/moonshot-project.jpg");
+  background-color: white;
+}
+
+.project2 .project-img {
   background-image: url("../images/fylo-project.jpg");
   background-color: #fff5d7;
 }
 
-.project2 .project-img {
+.project3 .project-img {
   background-image: url("../images/tindog-project.jpg");
   background-color: #ff4c68;
 }
 
-.project3 .project-img {
+.project4 .project-img {
   background-image: url("../images/keeper-project.jpg");
   background-color: #eee;
 }
 
-.project4 .project-img {
+.project5 .project-img {
   background-image: url("../images/ghiblib-project.jpg");
   background-color: #eee;
 }
 
-.project5 .project-img {
+.project6 .project-img {
   background-image: url("../images/roll-project.jpg");
   background-color: #222c37;
 }
@@ -297,9 +321,9 @@ footer {
 
 /*--------------------------------------------- Responsive ---------------------------------------------*/
 
-/* First breaking point for the project section (less than 1650px) */
+/* First breaking point for the project section (less than 1500px) */
 
-@media (max-width: 1649.98px) {
+@media (max-width: 1499.98px) {
   /* Projects */
 
   .all-project-container {

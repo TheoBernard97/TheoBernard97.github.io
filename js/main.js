@@ -1,6 +1,19 @@
+/** @format */
+
 const modal = [
   {
     id: 1,
+    title: "Moonshot Insurance",
+    img: "images/moonshot-modal.png",
+    tech: "Vue.js",
+    button: "#moonshot-button",
+    description:
+      "Moonshot Insurance est une InsurTech offrant des assurances contextuelles B2B2C avec une expérience 100% digital.",
+    live: "https://moonshot-insurance.com/",
+    github: "",
+  },
+  {
+    id: 2,
     title: "Fylo",
     img: "images/fylo-modal.png",
     tech: "HTML - Sass",
@@ -11,7 +24,7 @@ const modal = [
     github: "https://github.com/TheoBernard97/Fylo",
   },
   {
-    id: 2,
+    id: 3,
     title: "Tindog",
     img: "images/tindog-modal.png",
     tech: "HTML - CSS - Bootstrap",
@@ -22,7 +35,7 @@ const modal = [
     github: "https://github.com/TheoBernard97/Tindog",
   },
   {
-    id: 3,
+    id: 4,
     title: "KeeperApp",
     img: "images/keeper-modal.png",
     tech: "React.js - CSS",
@@ -33,7 +46,7 @@ const modal = [
     github: "https://github.com/TheoBernard97/KeeperApp",
   },
   {
-    id: 4,
+    id: 5,
     title: "Ghiblib",
     img: "images/ghiblib-modal.png",
     tech: "React.js - Redux",
@@ -44,7 +57,7 @@ const modal = [
     github: "https://github.com/TheoBernard97/Ghiblib",
   },
   {
-    id: 5,
+    id: 6,
     title: "Roll a ball 3D",
     img: "images/roll-modal.png",
     tech: "C# - Unity",
@@ -52,7 +65,7 @@ const modal = [
     description:
       "Jeu de plateforme 3D, ce projet de 2015 est mon tout premier. C'est à cette occasion que j'ai découvert les bases de la programmation.",
     live: "https://theobernard97.itch.io/roll-our-earth",
-    github: "https://github.com/TheoBernard97/Roll-a-ball",
+    github: "",
   },
 ];
 
@@ -62,7 +75,7 @@ modal.map((modal) => (new Image().src = modal.img));
 
 // Skill animation
 
-const progressBarEnds = [85, 80, 70, 70, 50, 40, 40, 60];
+const progressBarEnds = [85, 80, 80, 80, 50, 40, 50, 70];
 const progressBars = document.querySelectorAll(".progress-bar");
 const skillSection = document.querySelector("#compétences");
 let checkOnce = false;
@@ -101,4 +114,16 @@ function changeModalContent(x) {
   document.querySelector("#modal-description").innerHTML = modal[x].description;
   document.querySelector("#modal-live-button").href = modal[x].live;
   document.querySelector("#modal-button").href = modal[x].github;
+
+  if (!modal[x].github) {
+    document.querySelector("#modal-button").removeAttribute("href");
+    document.querySelector("#modal-button").setAttribute("disabled", "");
+    document.querySelector("#modal-button").classList.add("disabled");
+  } else {
+    document
+      .querySelector("#modal-button")
+      .setAttribute("href", modal[x].github);
+    document.querySelector("#modal-button").removeAttribute("disabled");
+    document.querySelector("#modal-button").classList.remove("disabled");
+  }
 }
