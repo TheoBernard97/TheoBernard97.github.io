@@ -5,7 +5,7 @@ const modal = [
     id: 1,
     title: "Moonshot Insurance",
     img: "images/moonshot-modal.png",
-    tech: "Vue.js",
+    tech: "VueJS",
     button: "#moonshot-button",
     description:
       "Moonshot Insurance est une InsurTech offrant des assurances contextuelles B2B2C avec une expérience 100% digital.",
@@ -38,7 +38,7 @@ const modal = [
     id: 4,
     title: "KeeperApp",
     img: "images/keeper-modal.png",
-    tech: "React.js - CSS",
+    tech: "ReactJS",
     button: "#keeper-button",
     description:
       "Application web de prise de notes, KeeperApp est mon premier projet développé avec React.",
@@ -49,7 +49,7 @@ const modal = [
     id: 5,
     title: "Ghiblib",
     img: "images/ghiblib-modal.png",
-    tech: "React.js - Redux",
+    tech: "ReactJS - Redux",
     button: "#ghiblib-button",
     description:
       "Site de présentation du Studio Ghibli, ce projet est réalisé avec React, Redux et récupere les données liées aux films via une API publique.",
