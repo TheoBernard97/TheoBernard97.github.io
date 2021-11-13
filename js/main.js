@@ -8,7 +8,7 @@ const modal = [
     tech: "VueJS",
     button: "#moonshot-button",
     description:
-      "Moonshot Insurance est une InsurTech offrant des assurances contextuelles B2B2C avec une expérience 100% digital.",
+      "Moonshot Insurance est une InsurTech offrant des assurances contextuelles B2B2C avec une expérience 100% digitale.",
     live: "https://moonshot-insurance.com/",
     github: "",
   },
