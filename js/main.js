@@ -14,28 +14,6 @@ const modal = [
   },
   {
     id: 2,
-    title: "Fylo",
-    img: "images/fylo-modal.png",
-    tech: "HTML - Sass",
-    button: "#fylo-button",
-    description:
-      "Page de présentation fictive du service Fylo, ce projet était pour moi un moyen de pratiquer Sass et CSS grid.",
-    live: "https://theobernard97.github.io/Fylo",
-    github: "https://github.com/TheoBernard97/Fylo",
-  },
-  {
-    id: 3,
-    title: "Tindog",
-    img: "images/tindog-modal.png",
-    tech: "HTML - CSS - Bootstrap",
-    button: "#tindog-button",
-    description:
-      "Page de présentation fictive de l'application Tindog, ce projet est mon premier réalisé avec Bootstrap.",
-    live: "https://theobernard97.github.io/Tindog",
-    github: "https://github.com/TheoBernard97/Tindog",
-  },
-  {
-    id: 4,
     title: "KeeperApp",
     img: "images/keeper-modal.png",
     tech: "ReactJS",
@@ -46,7 +24,7 @@ const modal = [
     github: "https://github.com/TheoBernard97/KeeperApp",
   },
   {
-    id: 5,
+    id: 3,
     title: "Ghiblib",
     img: "images/ghiblib-modal.png",
     tech: "ReactJS - Redux",
@@ -55,6 +33,28 @@ const modal = [
       "Site de présentation du Studio Ghibli, ce projet est réalisé avec React, Redux et récupere les données liées aux films via une API publique.",
     live: "https://theobernard97.github.io/Ghiblib",
     github: "https://github.com/TheoBernard97/Ghiblib",
+  },
+  {
+    id: 4,
+    title: "Fylo",
+    img: "images/fylo-modal.png",
+    tech: "HTML - Sass",
+    button: "#fylo-button",
+    description:
+      "Page de présentation fictive du service Fylo, ce projet était pour moi un moyen de pratiquer Sass et CSS grid.",
+    live: "https://theobernard97.github.io/Fylo",
+    github: "https://github.com/TheoBernard97/Fylo",
+  },
+  {
+    id: 5,
+    title: "Tindog",
+    img: "images/tindog-modal.png",
+    tech: "HTML - CSS - Bootstrap",
+    button: "#tindog-button",
+    description:
+      "Page de présentation fictive de l'application Tindog, ce projet est mon premier réalisé avec Bootstrap.",
+    live: "https://theobernard97.github.io/Tindog",
+    github: "https://github.com/TheoBernard97/Tindog",
   },
   {
     id: 6,
