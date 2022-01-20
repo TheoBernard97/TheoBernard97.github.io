@@ -286,23 +286,23 @@ footer {
 }
 
 .project2 .project-img {
-  background-image: url("../images/fylo-project.jpg");
-  background-color: #fff5d7;
-}
-
-.project3 .project-img {
-  background-image: url("../images/tindog-project.jpg");
-  background-color: #ff4c68;
-}
-
-.project4 .project-img {
   background-image: url("../images/keeper-project.jpg");
   background-color: #eee;
 }
 
-.project5 .project-img {
+.project3 .project-img {
   background-image: url("../images/ghiblib-project.jpg");
   background-color: #eee;
+}
+
+.project4 .project-img {
+  background-image: url("../images/fylo-project.jpg");
+  background-color: #fff5d7;
+}
+
+.project5 .project-img {
+  background-image: url("../images/tindog-project.jpg");
+  background-color: #ff4c68;
 }
 
 .project6 .project-img {
