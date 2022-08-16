@@ -24,8 +24,7 @@ h2 {
 
 /* Sections */
 
-section,
-footer {
+section{
   padding: 5% 15%;
 }
 
@@ -311,6 +310,10 @@ footer {
 }
 
 /* Footer */
+
+footer {
+  padding: 2% 15%;
+}
 
 .footer-button {
   margin: 0 10px 0;
