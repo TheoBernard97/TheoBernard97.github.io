@@ -280,31 +280,26 @@ section{
 }
 
 .project1 .project-img {
-  background-image: url("../images/moonshot-project.jpg");
-  background-color: white;
-}
-
-.project2 .project-img {
   background-image: url("../images/keeper-project.jpg");
   background-color: #eee;
 }
 
-.project3 .project-img {
+.project2 .project-img {
   background-image: url("../images/ghiblib-project.jpg");
   background-color: #eee;
 }
 
-.project4 .project-img {
+.project3 .project-img {
   background-image: url("../images/fylo-project.jpg");
   background-color: #fff5d7;
 }
 
-.project5 .project-img {
+.project4 .project-img {
   background-image: url("../images/tindog-project.jpg");
   background-color: #ff4c68;
 }
 
-.project6 .project-img {
+.project5 .project-img {
   background-image: url("../images/roll-project.jpg");
   background-color: #222c37;
 }

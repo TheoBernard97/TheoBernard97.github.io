@@ -3,17 +3,6 @@
 const modal = [
   {
     id: 1,
-    title: "Moonshot Insurance",
-    img: "images/moonshot-modal.png",
-    tech: "VueJS",
-    button: "#moonshot-button",
-    description:
-      "Moonshot Insurance est une InsurTech offrant des assurances contextuelles B2B2C avec une expérience 100% digitale.",
-    live: "https://moonshot-insurance.com/",
-    github: "",
-  },
-  {
-    id: 2,
     title: "KeeperApp",
     img: "images/keeper-modal.png",
     tech: "ReactJS",
@@ -24,7 +13,7 @@ const modal = [
     github: "https://github.com/TheoBernard97/KeeperApp",
   },
   {
-    id: 3,
+    id: 2,
     title: "Ghiblib",
     img: "images/ghiblib-modal.png",
     tech: "ReactJS - Redux",
@@ -35,7 +24,7 @@ const modal = [
     github: "https://github.com/TheoBernard97/Ghiblib",
   },
   {
-    id: 4,
+    id: 3,
     title: "Fylo",
     img: "images/fylo-modal.png",
     tech: "HTML - Sass",
@@ -46,7 +35,7 @@ const modal = [
     github: "https://github.com/TheoBernard97/Fylo",
   },
   {
-    id: 5,
+    id: 4,
     title: "Tindog",
     img: "images/tindog-modal.png",
     tech: "HTML - CSS - Bootstrap",
@@ -57,7 +46,7 @@ const modal = [
     github: "https://github.com/TheoBernard97/Tindog",
   },
   {
-    id: 6,
+    id: 5,
     title: "Roll a ball 3D",
     img: "images/roll-modal.png",
     tech: "C# - Unity",
